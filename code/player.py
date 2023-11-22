@@ -208,10 +208,6 @@ class Player(Entity):
 	def is_dead(self):
 		return self.health <= 0
 
-	def game_over(self):
-
-		pygame.quit()
-
 	def update(self):
 		self.input()
 		self.cooldowns()
